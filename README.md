@@ -24,12 +24,14 @@ h1.center{text-align:center;}
 button {color:white;background-color:purple;}
 header{
   background-color:#66B032;
+  color:white;
   }
 .main{
   background-color:#A9FF6B;
   }
 footer{
   background-color:#1B3409;
+  color:white;
 }  
 
 </style>
