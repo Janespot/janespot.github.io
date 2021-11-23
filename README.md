@@ -12,7 +12,7 @@
 
 h1.center{text-align:center;}
   
-  body{width:100%;
+  body{width:100%;margin:0;
  }
   
 .red{color:red;}
@@ -76,7 +76,7 @@ Much love to you all!</p>
 <footer class="w3-container w3-text-white">
 
 <p><u>Note from the author</u></p>
-<br/>
+<img src="https://user-images.githubusercontent.com/58133653/143065392-d9667b36-31a3-47a7-8acc-b0daf5691bba.jpg" width="50px" height="50px"><br/>
 <caption>@Jane_spot</caption>
 <p>-Stay safe! &#128151;&#128151;&#128151;</p>
 
