@@ -12,6 +12,9 @@
 
 h1.center{text-align:center;}
 
+.container-lg{
+  max-width:inherit;}
+  
 .red{color:red;}
 
 .rblue{color:royalblue;}
