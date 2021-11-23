@@ -35,6 +35,7 @@ header{
 footer{
   background-color:#1B3409;
   color:white;
+  width:100%;
 }  
 
 </style>
@@ -44,8 +45,8 @@ footer{
 
 <body style="width:100%">
 
-<header class="w3-container " style="width:100%">
-<div class="w3-panel w3-green w3-text-white">
+<header style="width:100%">
+<div>
   
   <img src="https://user-images.githubusercontent.com/58133653/143065586-e93427c6-800b-429a-be2e-27adf6e8b145.png">
     <p>Hello,welcome to my website</p>
