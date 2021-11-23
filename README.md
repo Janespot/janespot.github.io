@@ -11,9 +11,9 @@
 <style>
 
 h1.center{text-align:center;}
-
-.container-lg{
-  max-width:inherit;}
+  
+  body{width:100%;
+ }
   
 .red{color:red;}
 
