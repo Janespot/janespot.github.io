@@ -38,7 +38,7 @@ footer{
 
 </style>
 <script src="https://kit.fontawesome.com/42b8509470.js" crossorigin="anonymous"/></script>
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -47,7 +47,6 @@ footer{
 <div class="w3-panel w3-green w3-text-white">
   
   <img src="https://user-images.githubusercontent.com/58133653/143065586-e93427c6-800b-429a-be2e-27adf6e8b145.png">
-  https://user-images.githubusercontent.com/58133653/143065586-e93427c6-800b-429a-be2e-27adf6e8b145.png
     <p>Hello,welcome to my website</p>
  </div>
 </header>
