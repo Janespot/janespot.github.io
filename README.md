@@ -43,16 +43,16 @@ footer{
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
-<body>
+<body style="width:100%">
 
-<header class="w3-container ">
+<header class="w3-container " style="width:100%">
 <div class="w3-panel w3-green w3-text-white">
   
   <img src="https://user-images.githubusercontent.com/58133653/143065586-e93427c6-800b-429a-be2e-27adf6e8b145.png">
     <p>Hello,welcome to my website</p>
  </div>
 </header>
-<div class="w3-container main">
+<div class="w3-container main" style="width:100%" >
 <h1 class="center red"><b>JANE_SPOT</b></h1>
 <h3 class="center rblue"><b>Thank You Note</b></h3>
 
@@ -75,7 +75,7 @@ Much love to you all!</p>
 <address>janejunell1234@gmail.com</address><br/><br/><br/><br/><br/>
 </div>
 </div>
-<footer class="w3-container w3-text-white">
+<footer class="w3-container w3-text-white" style="width:100%">
 
 <p><u>Note from the author</u></p>
 <img src="https://user-images.githubusercontent.com/58133653/143065392-d9667b36-31a3-47a7-8acc-b0daf5691bba.jpg" width="130px" height="150px"><br/>
