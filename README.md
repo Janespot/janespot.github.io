@@ -14,7 +14,6 @@ h1.center{text-align:center;}
   
 body{
   width:100%;
-  size:cover;
  }
   
 .red{color:red;}
@@ -40,7 +39,7 @@ footer{
 
 </style>
 <script src="https://kit.fontawesome.com/42b8509470.js" crossorigin="anonymous"/></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 
 <body style="width:100%">
