@@ -14,7 +14,7 @@ h1.center{text-align:center;}
   
 body{
   width:100%;
-  margin:0;
+  size:cover;
  }
   
 .red{color:red;}
