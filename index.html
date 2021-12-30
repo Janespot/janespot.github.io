@@ -3,6 +3,8 @@
 <head>
 <title>JaneSpot</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script>
 </script>
 <style>
@@ -12,13 +14,20 @@
     background-repeat:no-repeat;
     background-attachment:fixed;
   }
+  button{
+    
+	margin-top:40px;
+	margin-right:20px;
+	padding:20px;
+	border:none;
+	}
  
 		@media only screen and (max-width: 600px) {
        body{
     background-image:url(https://user-images.githubusercontent.com/58133653/147727624-ad3dda1c-956f-4bf1-9d03-7f89ca877460.png);
-    max-width:100%;
-    
+    max-width:100%; 
   }
+  #one{display:none;}
   }
 </style>
 <link rel="stylesheet" href="janespotOR.css"/>
@@ -32,5 +41,12 @@
 <base href="" target="_self"/>
 </head>
 <body>
+   <div id="one">
+     <a href="myProjects.html"><button type="button" class="w3-text-white w3-round-xlarge w3-blue w3-left">
+     <i class="material-icons" style="vertical-align:middle;color:yellow;" >star</i><b>My Projects</b></button></a>
+   </div>
+   
+   <div></div>
+
 </body>
 </html>
