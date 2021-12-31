@@ -32,8 +32,32 @@
   a img{
   margin-bottom:3px;
   }
+  div a{
+   text-decoration:none;
+   }
+    #hny{
+   color:#d6ab50;
+   text-align:center;
+   font-size:50px;
+   margin-top:30px;
+   font-family:Alice;
+   animation: blink-animation 1s steps(5, start) infinite;
+   -webkit-animation: blink-animation 1s steps(5, start) infinite;
+   }
+   @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+		
 </style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 <link rel="stylesheet" href="janespotOR.css"/>
+ <link href='https://fonts.googleapis.com/css?family=Alex Brush|Alice&effect=neon' rel='stylesheet'>
 <link src=""/>
 <meta charset="UTF-8"/>
 <meta name="keywords" content=""/>
@@ -44,15 +68,18 @@
 <base href="" target="_self"/>
 </head>
 <body>
-   <div id="one">
+  
+  
      <a href="myProjects.html"><button type="button" class="w3-text-white w3-round-xlarge w3-blue w3-left">
      <i class="material-icons" style="vertical-align:middle;color:yellow;" >star</i><b>My Projects</b></button></a>
-   </div>
-   <div style="margin-left:20px;position:fixed;bottom:7px;">
+   
+   <div id="hny" class="font-effect-neon w3-round-xxlarge" ><a id="new" href="hny.html"><b>Happy New Year 2022 </b></a></div>
+    <div id="one">
+	<div style="margin-left:20px;position:fixed;bottom:7px;">
 	   <b style="text-decoration:underline;">Contacts</b><br/>
    <a style="text-decoration:none;" href="https://web.facebook.com/JaneSpotWebDev">
        <img src="https://user-images.githubusercontent.com/58133653/147743210-af9b8213-275a-4a78-bb8b-c8719a4300b0.jpg" alt="fb icon" style="width:42px;height:42px;">Facebook Page</a></div>
-   <div></div>
+   </div>
 
 </body>
 </html>
