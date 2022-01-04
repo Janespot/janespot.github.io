@@ -16,7 +16,7 @@
       font-family: 'Alex Brush';font-size: 72px;
       color:#4424D6;
     }
-    button {color:white;background-color:purple;border:none;padding:12px;float:left;}
+    /*button {color:white;background-color:purple;border:none;padding:12px;float:left;}
     .round{
       width:90%;
       background-color:#E5E0FA;
@@ -24,42 +24,50 @@
       margin-top:70px;
       padding:70px;
       padding-top:100px;
-    }
+    }*/
     p{
       font-family:Alice;font-size:22px;
     }
-    footer,header{
+    footer{
       background-color:#110934;
       color:white;
-    }
+	  position:fixed;
+	  bottom:0; 
+	  width:100%;}
     h1{font-family: 'Alex Brush';font-size: 22px;} 
     header{
       margin-top:0;
       padding:22px;
     }
     .head{
-      font-size:52px;
+      font-size:62px;
       font-family: 'Alex Brush';
+	  margin-top:100px;
     }
+	div a{
+		text-decoration:none;
+		float:right;
+		}
+		
   </style>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
   </head>
   <body>
-    <header>
+    
+    <div class="w3-right w3-hide-small w3-top w3-padding w3-bar w3-black w3-top w3-wide">
      
-      <div class="w3-center head">Janespot</div>
-    </header>
-    <a href="home.html"><button type="button" class="w3-text-white w3-round-xxlarge w3-card-4 w3-blue w3-left">
-    <i class="material-icons" style="vertical-align:middle;color:black;" >home</i>Home</button></a>
-    
-    <a href="index.html"><button type="button" class="w3-text-white w3-round-xxlarge w3-card-4 w3-blue w3-left">
-    <i class="material-icons" style="vertical-align:middle;color:yellow;" >star</i>Acknowledgement</button></a>
-    
-      <a href="pageone.html"><button type="button" class="w3-text-white w3-round-xxlarge w3-card-4 w3-blue w3-left">Next page</button></a>
-    
+    <a href="index.html" class="w3-bar-item"><i class="material-icons" style="vertical-align:middle;color:white;" >home</i>Home</a>
+    <div class="w3-hide-small ">
+    <a href="thanks.html" class="w3-bar-item"><i class="material-icons" style="vertical-align:middle;color:yellow;" >star</i>Acknowledgement</a>
+	  </div> </div>
+	  <header>
+     <div class="w3-center w3-text-white head"><b>Janespot</b></div>
+	 </header>
+   
       <div class="w3-center w3-circle  round">
-    <div class="w3-center name w3-center font-effect-neon">Jane Junell</div>
+    <div class="w3-center name w3-center font-effect-neon"></div>
     <div style="font-size:32px;">&#128150;</div>
-        <p class="w3-center">Hello, My name is Jane.<br/>I am a frontend web developer.<br/>Contact me to get your websites done fast and in good quality&#128175;&#128175;</p>
+        <p class="w3-center w3-text-white"">Hello, My name is Jane.<br/>I am a frontend web developer.<br/>Contact me to get your websites done fast and in good quality&#128175;&#128175;</p>
     </div>
     <footer><br/>
       <h1>Thank you for visiting my site!</h1><br/><br/><br/>
