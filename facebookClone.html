@@ -43,6 +43,10 @@ ul li{
 .yellow{
   background-color:lime;
   }
+		/*SMALL SCREEN*/
+	@media only screen and (max-width: 768px) {
+		#xScreen{ display:none;}
+	}
 </style>
 
 <meta charset="UTF-8"/>
@@ -54,6 +58,7 @@ ul li{
 <base href="" target="_self"/>
 </head>
 <body>
+<div id="xScreen">
 <div class="w3-container" style="background-color:#f5f5f5;">
 <div class="pleft w3-left w3-container">Welcome to the new facebook</div>
 <div class="w3-right">Send feedback</div>
@@ -123,6 +128,7 @@ ul li{
 
 <a href="instagramClone.html"><button class="w3-left w3-text-white w3-blue" type="button">Next page
 <i class="material-icons" style="vertical-align:middle;">chevron_right</i></button></a><br/>
+	</div>
   
 </body>
 </html>
