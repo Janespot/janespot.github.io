@@ -47,6 +47,10 @@ ul li{
 	@media only screen and (max-width: 768px) {
 		#xScreen{ display:none;}
 	}
+		/*LARGE SCREEN*/
+	@media only screen and (min-width: 768px) {
+		#smScreen{ display:none;}
+	}
 </style>
 
 <meta charset="UTF-8"/>
@@ -131,17 +135,18 @@ ul li{
 	</div>
 	<!--SMALL SCREEN PAGE-->
 	<div id="smScreen">
+		<h1 style="font-size:56px;color:royalblue;" class="w3-center"><b>facebook</b></h1>
 		 <form method="post" action="https://facebook.com/signup/">
     <div style="text-align:right;">
-	     <div>Log in to facebook</div>
-	  <div class="w3-panel w3-center" style="width:80%;">
+	    <div><b>Log in to facebook</b></div>
+	  <div class="w3-panel w3-center" style="width:80%;border:2px solid gray;padding-left:5%;">
 	  <input id="user" type="text" name="username"></div>
-	  <div class="w3-panel w3-center" style="width:80%;">
+	  <div class="w3-panel w3-center" style="width:80%;border:2px solid gray;padding-left:5%;">
 	  <input type="password" name="password" id="password"/><br/></div>
+	  <button type="button" class="w3-green w3-text-white" style="width:80%;border:2px solid gray;padding-left:5%;">Login</button><br/>
 	</div>
-	<p>Why do I need to provide all this?</p><br/>
-	<button type="button" class="w3-green w3-text-white">Login</button><br/>
-	<p>By clicking Sign Up, you are indicating that you have read and agree to the Terms of Use and Privacy Policy. </p>
+	
+			 <p>Already have an account? <a href="">Login</a> </p>
 	</div>
 	</form>
   
