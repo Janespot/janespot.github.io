@@ -37,6 +37,10 @@
 	@media only screen and (max-width: 768px) {
 		#xScreen{display:none;}
 	}
+	/*LARGE SCREEN*/
+	@media only screen and (min-width: 768px) {
+		#smScreen{display:none;}
+	}
 		
 </style>
 <link src=""/>
@@ -49,6 +53,38 @@
 <base href="" target="_self"/>
 </head>
 <body>
+	<!--SMALL SCREEN PAGE-->
+	
+  <div id="smScreen" class="w3-purple">
+	   <div class="w3-container">
+  <div class="w3-white w3-text-black"> 
+    <b class="insta">Instagram</b><br/><br/><br/>
+	<b>Sign up to see photos and videos from your friends.</b><br/><br/>
+	<button class="samewide w3-blue w3-text-white" type="button"><b><span class="w3-white w3-text-blue" style="padding:2px;"> f </span>  Log in with Facebook</b></button><br/><br/>
+	OR
+  <br/><br/>
+  <div class="w3-container">
+    <form>
+	  <input placeholder="Mobile Number or Email" class="samewide" type="text" name="email"/><br/><br/>
+	  <input placeholder="Full Name" class="samewide" type="text" name="fname"/><br/><br/>
+	  <input placeholder="Username" class="samewide" type="text" name="username"/><br/><br/>
+	  <input placeholder="Password" class="samewide" type="password" name="password"/><br/><br/>
+	  <b><input class="w3-blue w3-text-white samewide" type="submit" value="Sign Up"/></b><br/>
+	</form>
+  </div>
+  By signing up, you agree to our Terms, Data Policy and Cookies Policy.<br/>
+  </div>
+  <div class=" mai2 w3-center w3-white w3-text-black w3-panel">
+    <b>Have an account?<span class="w3-text-blue">Log in</span></b>
+  </div>
+    <b>Get the App</b>
+	  </div></div>
+	
+	
+	<!--LARGE SCREEN PAGE-->
+	
+	
+	<div  id="xScreen">
   <div class="main w3-container w3-right">
   <div class="main2 w3-center w3-white w3-text-black"> 
     <b class="insta">Instagram</b><br/><br/><br/>
@@ -72,7 +108,7 @@
   </div>
     <b>Get the App</b>
   </div>
-	<div  id="xScreen">
+	
   <div class="w3-container w3-left">
     <img  class="w3-round-large pi2" src="https://user-images.githubusercontent.com/58133653/147745005-428a159b-4ac2-4b5d-9914-b944c8a96c44.jpeg" alt="instagram pictures" style="width:120%;"/>
   </div>
