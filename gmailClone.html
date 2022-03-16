@@ -46,6 +46,21 @@ body{
   img{
     padding-bottom:12px;
 	}
+	
+	
+ 	/*SMALL SCREEN*/
+	@media only screen and (max-width: 768px) {
+		#xScreen{display:none;}
+		
+		
+ }
+ 
+ 	/*LARGE SCREEN*/
+	@media only screen and (min-width: 768px) {
+		#smScreen{display:none;}
+ }
+	
+	
 </style>
 <meta charset="UTF-8"/>
 <meta name="keywords" content=""/>
@@ -56,6 +71,16 @@ body{
 <base href="" target="_self"/>
 </head>
 <body>
+	
+	<!--SMALL SCREEN-->
+	
+	<div id="smScreen">
+	</div>
+	
+	<!--LARGE SCREEN-->
+	
+	
+	<div id="xScreen">
 <div class="header">
   <span class="w3-text-blue">G</span><span class="w3-text-red">o</span><span class="w3-text-amber">o</span><span class="w3-text-blue">g</span><span class="w3-text-green" >l</span><span class="w3-text-red">e</span><br/>
   One account. All of Google.<br/></div>
@@ -91,5 +116,6 @@ One Google Account for everything Google
 <i class="material-icons" style="vertical-align:middle;">chevron_right</i></button></a>
 
 </div>
+	</div>
 </body>
 </html>
