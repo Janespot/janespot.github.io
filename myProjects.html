@@ -49,13 +49,19 @@ nav{
   background-image:url("https://user-images.githubusercontent.com/58133653/147743529-04980736-f05d-4a58-99ea-b731c4c010bf.jpeg");
  background-repeat:no-repeat;
  background-attachment:fixed;
- background-size:cover;
+	background-size:cover;}
+	#smScreen{display:none;
 		}}
 	/*SMALL SCREEN*/
 	@media only screen and (max-width: 768px) {
-		.prolist{
-			background-color:gray;
-		}}
+		body{background-color:white;}
+		#xScreen{display:none;}
+		nav{
+  background-color:black;
+  color:white;
+  font-size:30px;
+} 
+	}
 </style>
 <link src=""/>
 <meta charset="UTF-8"/>
@@ -67,6 +73,47 @@ nav{
 <base href="" target="_self"/>
 </head>
 <body>
+	<!--SMALL SCREEN-->
+	
+	<div id="smScreen">
+	
+	 <h6><b>My Projects</b></h6>
+  </div>
+  <nav class="w3-round-large w3-bar w3-container">
+    <ul class="w3-left">
+	  <a href="index.html"><li id="home"><b><i class="material-icons" style="vertical-align:middle;font-size:42px;" >home</i>Home</b></li></a>
+	</ul>
+  </nav>
+  <div class="w3-container word w3-center">
+    <b>Here is a list of my projects. Please click on any to view.</b>
+	</div>
+  <div class="prolist w3-container none"><hr/><hr/>
+  <a href="facebookClone.html"><div class="w3-hover-green w3-round-xxlarge w3-container w3-center w3-text-white navy" style="background-color:gray;">
+    Facebook Clone
+  </div></a>
+  <a href="instagramClone.html"><div class="w3-container w3-center navy">
+    Instagram Clone
+  </div></a>
+  <a href="twitterClone.html"><div class="w3-container w3-hover-green w3-round-xxlarge w3-center w3-text-white navy" style="background-color:gray;" >
+    Twitter Clone
+  </div></a>
+  <a href="gmailClone.html"><div class="w3-container w3-center navy">
+     Gmail Clone
+  </div></a>
+  <a href="google.html"><div class="w3-container w3-round-xxlarge w3-hover-green w3-center w3-text-white navy" style="background-color:gray;">
+    Google Page Clone
+  </div></a>
+  </div>
+  
+  <div class="w3-right">
+  <b>Thank you for visiting my page!</b>
+  </div><hr/><hr/><hr/><hr/><hr/>
+	
+	</div>
+	
+	<!--LARGE SCREEN-->
+	
+	<div id="xScreen">
   <div class="lime w3-round-xxlarge w3-container w3-center">
     <h6><b>My Projects</b></h6>
   </div>
@@ -99,5 +146,6 @@ nav{
   <div class="w3-right">
   <b>Thank you for visiting my page!</b>
   </div><hr/><hr/><hr/><hr/><hr/>
+	</div>
 </body>
 </html>
