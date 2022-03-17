@@ -1,1 +1,1 @@
-document.getElementById("root").innerHTML="Welcome to Janespot!"
+document.write(5+6);
