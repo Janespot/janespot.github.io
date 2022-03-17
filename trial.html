@@ -2,9 +2,16 @@
 <html>
   <head>
   </head>
-  <body>
+  <body onload="greeting()">
     <h1>Javascript Trial</h1>
-    <button>Click Me!</button>
+    <div id="root></div>
+    <script>
+      function greeting(){
+        var name=prompt("Hello Anonymous! Please Enter Your Name Below:-");
+      }
+      document.getElementById("root").innerHTML="Hello "+name+"! Welcome to Janespot!";
+    </script>
+    <noscript>Sorry, Your browser doesn't support JavaScript!</noscript>
   </body>
   
 </html>
