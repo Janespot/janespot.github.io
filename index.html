@@ -4,83 +4,17 @@
 <title>JaneSpot</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="w3css.css"/>
 <script>
 </script>
 	
 <style>
-  body{
-    background-image:url();
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-  }
-  button{
-    margin-top:20px;
-	padding:20px;
-	border:none;
-	}
- 
-	
-/*FOR SMALLER SCREENS*/	
-@media only screen and (max-width: 768px) {
-       body{
-    background-color:black;
-  }
-.read{
-width:100%;
-color:#340926;
-padding-top:100px;
-padding-bottom:100px;  
-}
-
- p{
-   font-family:Alice;
-   font-size:34px;
-   color:#AE0D7A;
-    } 
-  .head1{
-    font-size:70px;
-   /* font-family: 'Alex Brush';*/
-   color:white;
-  }
-  #noSmall,#none{display:none;}
-	
- 
-   }
-	@media only screen and (min-width: 768px) {
-		#smScreen{display:none;}	
-	}
-	#hny{font-size:20px;}
-		
-	
-    #hny{
-   color:#d6ab50;
-   text-align:center;
-   font-size:50px;
-   margin-top:30px;
-   font-family:Alice;
-   animation: blink-animation 1s steps(5, start) infinite;
-   -webkit-animation: blink-animation 1s steps(5, start) infinite;
-   }
-   @keyframes blink-animation {
-        to {
-          visibility: hidden;
-        }
-      }
-      @-webkit-keyframes blink-animation {
-        to {
-          visibility: hidden;
-        }
-		div a{
-		text-decoration:none;
-		float:right;
-		}
 		
 </style>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 <link rel="stylesheet" href="janespotOR.css"/>
  <link href='https://fonts.googleapis.com/css?family=Alex Brush|Alice&effect=neon' rel='stylesheet'>
+ <link rel = "stylesheet" href = "style.css" />
 <link src=""/>
 <meta charset="UTF-8"/>
 <meta name="keywords" content=""/>
@@ -89,6 +23,13 @@ padding-bottom:100px;
 <meta http-equiv="refresh" content="360"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <base href="" target="_self"/>
+
+<style>
+body {
+	background: url("body.png");
+	background-cover: cover;
+}
+</style>
 </head>
 <body>
  <div id="noSmall">
@@ -99,8 +40,9 @@ padding-bottom:100px;
    </div>
   
     <div class="w3-right w3-hide-small">
-	<a href="home.html" class="w3-bar-item" style="text-decoration:none;">About</a>
-	<a href="" class="w3-bar-item" style="text-decoration:none;">Contacts</a>
+	<a href="about.html" class="w3-bar-item" style="text-decoration:none;">About Me</a>
+	<a href="contact.html" class="w3-bar-item" style="text-decoration:none;">Contacts</a>
+	<a href =""></a> 
 	
     </div>
     </div>
@@ -108,18 +50,11 @@ padding-bottom:100px;
    <!-- THIS IS A PAGE DECORATION
     <div id="hny" class="font-effect-neon w3-round-xxlarge" ><a id="new" href="hny.html"><b>Happy New Year 2022 </b></a></div>
     <div class="one">-->
-    <div id="none">
-	   <img src="https://user-images.githubusercontent.com/58133653/147699738-1f9b21b6-fee0-46d2-a66d-864b8974be81.png" alt="janespot image" width="100%">
-    </div>
-	 <div style="margin-left:20px;position:fixed;bottom:7px;">
-	   <b style="text-decoration:underline;">Contacts</b><br/>
-           <a style="text-decoration:none;" href="https://web.facebook.com/JaneSpotWebDev">
-           <img src="https://user-images.githubusercontent.com/58133653/147743210-af9b8213-275a-4a78-bb8b-c8719a4300b0.jpg"
-	   alt="fb icon" style="width:42px;height:42px;">Facebook Page</a></div>
-     </div>
-     </div>
-	<!--SMALL SCREEN PAGE-->
-<i class="material-icons" style="font-size:36px;color:white;">menu</i><i class='material-icons' style='font-size:24px;color:white;'>toggle-off</i>
+    <!--div id="none">
+	   <!--img src="https://user-images.githubusercontent.com/58133653/147699738-1f9b21b6-fee0-46d2-a66d-864b8974be81.png" alt="janespot image" width="100%">
+    </div-->
+	<!--SMALL SCREEN PAGE>
+<i class="material-icons" style="font-size:36px;color:white;">menu</i><i class='material-icons' style='font-size:24px;color:white;'>toggle-off</i-->
 	<div class="page" id="smScreen">
   <div class="w3-container w3-center read">
 	  	<br/><br/>
@@ -133,7 +68,12 @@ padding-bottom:100px;
 	   <button type="button" style="margin-left:10%;width:80%;" class="w3-text-black w3-round-xxlarge w3-card-4 w3-white w3-center">Web Developer</button>
 		
    
-  </div></div>
+  </div>
+  </div>
+
+		<!--div class = "footer">
+			<p>Footer4</p>
+		</div-->
 
 </body>
 </html>
