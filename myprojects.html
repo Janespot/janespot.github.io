@@ -12,28 +12,21 @@
 		<meta charset="UTF-8"/>
 		<meta http-equiv="refresh" content="360"/>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
 	</head>
 	
 	<body>
-
- <div id="noSmall">
-  <div class=" w3-padding w3-bar w3-white w3-top w3-wide">
-  <div class="one ">
-     <a href="myprojects.html"><button type="button" class="w3-text-white w3-round-xlarge w3-hide-small w3-blue w3-left">
-     <i class="material-icons" style="vertical-align:middle;color:yellow;" >star</i><b>My Projects</b></button></a>
-   </div>
+	<div class="topnav" id="myTopnav">
+		<!-- MENU-->
+		<a href="myprojects.html" class="w3-bar-item active" style="text-decoration:none;padding:15px;">
+		My Projects</a>
+		<a href="contact.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">Contacts</a>
+		<a href="about.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">About Me</a>
+		<a href="index.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">Home</a>
+		<a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
   
-    <div class="w3-right w3-hide-small">
-	<a href="index.html" class="w3-bar-item" style="text-decoration:none;">Home</a>	
-	<a href="about.html" class="w3-bar-item" style="text-decoration:none;">About Me</a>
-	<a href="contact.html" class="w3-bar-item" style="text-decoration:none;">Contacts</a>
-	<a href =""></a> 
-	
-    </div>
-    </div>
-  </div>
-  
-	<div style = "padding-left:40px;padding-bottom:40px;">
+	<div style="padding-left:10px;padding-right:10px;padding-bottom:20px;">
   <h2>My Projects</h2>
   <p>This page lists some of the projects I have worked on. Click on any to view details:</p>
   
@@ -42,17 +35,24 @@
 	<!--li><a href = "ofos.html"><button>Online Food Ordering System</button></a></li-->
   </div>
 	</div>
-	<div class = "footer" style = "	background-color: black;color: white;left: 0;bottom: 0;width: 100%;padding:20px;" >
-					
+	<div class = "footer" style = "	background-color: black;color: white;left: 0;bottom: 0;width: 100%;margin: 0;padding:20px;" >
 			<h3>Contact</h3>
 			<address>
 				<p>Email Address: <br />janejunell777@gmail.com</p>
 				<p>Phone Number:<br />+254725598758</p>
-				<p>Github</p>
-				<p>LinkedIn</p>
-				<p>Twitter</p>
+				<p>Oops! can't click any of the contacts link above! Visit my <a href = "contact.html">contact</a> page 
+				to contact me.</p>
 			</address>
-		</div>
-
+	</div>	
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>

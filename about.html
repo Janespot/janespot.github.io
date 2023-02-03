@@ -20,28 +20,23 @@
 	</head>
 
 	<body>
-   <div id="noSmall">
-  <div class=" w3-padding w3-bar w3-white w3-top w3-wide">
-  <div class="one ">
-     <a href="myprojects.html"><button type="button" class="w3-text-white w3-round-xlarge w3-hide-small w3-blue w3-left">
-     <i class="material-icons" style="vertical-align:middle;color:yellow;" >star</i><b>My Projects</b></button></a>
-   </div>
-  
-    <div class="w3-right w3-hide-small">
-	<a href="index.html" class="w3-bar-item" style="text-decoration:none;">Home</a>
-	<a href="contact.html" class="w3-bar-item" style="text-decoration:none;">Contacts</a>
-	<a href =""></a> 
-	
-    </div>
-    </div>
-  </div>
-  <div style = "padding-left:40px">
+	<div class="topnav" id="myTopnav">
+		<!-- MENU-->
+		<a href="myprojects.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">
+		My Projects</a>
+		<a href="contact.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">Contacts</a>
+		<a href="about.html" class="w3-bar-item active" style="text-decoration:none;padding:15px;">About Me</a>
+		<a href="index.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">Home</a>
+		<a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+	<img src = "./images/body2.png" alt = "Me" class = "smallscreen">
+  <div style="padding-left:10px;padding-right:10px;">
   <div class = "about-section">
-  <h2 style = "text-align:center">About Me</h2>
+  <h1 style = "text-align:center;font-size: 66px;">About Me</h1>
   <div class = "row" >
 	<div class = "column">
 		<div class = "card" style = "text-align:center;padding-left:5%;" >
-			<img src = "./images/me.jpg" alt = "Me" style = "width:30%" class = "w3-circle w3-card-4">
+			<img src = "./images/me.jpg" alt = "Me" class = "largescreen w3-circle w3-card-4" style="width:30%">
 			<div class = "container">
 				<h2>Janespot</h2>
 				<p class = "title">Web Developer</p>
@@ -127,12 +122,21 @@ Visual representations such as images or graphics.</pre>
 			<address>
 				<p>Email Address: <br />janejunell777@gmail.com</p>
 				<p>Phone Number:<br />+254725598758</p>
-				<p>Github</p>
-				<p>LinkedIn</p>
-				<p>Twitter</p>
+				<p>Oops! can't click any of the contacts link above! Visit my <a href = "contact.html">contact</a> page 
+				to contact me.</p>
 			</address>
-	</div>
+	</div>	
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 
 </html>

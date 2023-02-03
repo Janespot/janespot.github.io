@@ -13,31 +13,19 @@
 		<meta http-equiv="refresh" content="360"/>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 		
-		<style>
-			img {
-				width: 60%;
-			}
-		</style>
 	</head>
 	
 	<body>
+	<div class="topnav" id="myTopnav">
+		<!-- MENU-->
+		<a href="myprojects.html" class="w3-bar-item active" style="text-decoration:none;padding:15px;">
+		My Projects</a>
+		<a href="contact.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">Contacts</a>
+		<a href="about.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">About Me</a>
+		<a href="index.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">Home</a>
+		<a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
 
- <div id="noSmall">
-  <div class=" w3-padding w3-bar w3-white w3-top w3-wide">
-  <div class="one ">
-     <a href="myprojects.html"><button type="button" class="w3-text-white w3-round-xlarge w3-hide-small w3-blue w3-left">
-     <i class="material-icons" style="vertical-align:middle;color:yellow;" >star</i><b>My Projects</b></button></a>
-   </div>
-  
-    <div class="w3-right w3-hide-small">
-	<a href="index.html" class="w3-bar-item" style="text-decoration:none;">Home</a>	
-	<a href="about.html" class="w3-bar-item" style="text-decoration:none;">About Me</a>
-	<a href="contact.html" class="w3-bar-item" style="text-decoration:none;">Contacts</a>
-	<a href =""></a> 
-	
-    </div>
-    </div>
-  </div>
   <div style = "padding:20px">
   <h1 style = "	text-align: center;font-size: 50px;">Knowlege is Power</h1><hr />
   <p>This is a project that shows a PHP & MySQL E-commerce website.</p>
@@ -125,7 +113,7 @@
 		
 	<h2 style = "text-align: center;font-size: 30px;">User Accounts</h2><hr />
 	<p>Shown below is the homepage of the system:</p>
-	<img src = "./images/homepage.jpeg" alt = "Knowlege is Power homepage" /><br />
+	<img src = "./images/homepage.jpeg" alt = "Knowlege is Power homepage" class = "small" /><br />
 	<caption>Fig. 1</caption><br /><br />
 	<p>The homepage has functionalities such as :<p>
   	<ol>
@@ -149,7 +137,7 @@
 	<p>This is also found on the navigation bar and clicking on it takes the user to a page that provides contact services to the 
 	administrators such as email services or filling in contact form.</p>
 	<p>Logged in users can also logout. On logging out, a message is shown as below:</p>
-	<img src ="./images/logout.jpeg" alt = "logout message" /><br />
+	<img src ="./images/logout.jpeg" alt = "logout message" class = "small" /><br />
 	<caption>Fig. 2</caption><br /><br />
 
 	<p>Upon logging in, if the user has forgotten password, the user will click forgot password just above the 
@@ -159,7 +147,7 @@
 
 	<p>Shown below is the registration form:</p>
 
-	<img src = "./images/register.jpeg" alt = "registration form" /><br />
+	<img src = "./images/register.jpeg" alt = "registration form" class = "small" /><br />
 	<caption>Fig. 3</caption><br /><br />
 	<p>The system also has a great validation funtionality which is another great security measure. 
 	This is such as: checking if user input is correct and preventing symbols in input forms which may 
@@ -172,10 +160,10 @@
 	types of users: admin and other users. The admin manages the system. S/he adds pages and pdfs to the system through 
 	forms as shown below:</p>
 	
-	<img src = "./images/addPage.jpeg" alt = "admin add page form"/><br />
+	<img src = "./images/addPage.jpeg" alt = "admin add page form" class = "small" /><br />
 	<caption>Fig. 4</caption><br /><br />
 	
-	<img src = "./images/addPdf.jpeg" alt = "admin add pdf form"/><br />
+	<img src = "./images/addPdf.jpeg" alt = "admin add pdf form" class = "small" /><br />
 	<caption>Fig. 5</caption><br /><br />
 	
 	
@@ -183,17 +171,24 @@
 	<p>The above described system can be found on <a href = "https://github.com/Janespot/Ecommerce/tree/main/effotlessEcommerce/Ecommerce2">GitHub</a>.
   </div>
 
-	<div class = "footer" style = "	background-color: black;color: white;left: 0;bottom: 0;width: 100%;padding:20px;" >
-					
+	<div class = "footer" style = "	background-color: black;color: white;left: 0;bottom: 0;width: 100%;margin: 0;padding:20px;" >
 			<h3>Contact</h3>
 			<address>
 				<p>Email Address: <br />janejunell777@gmail.com</p>
 				<p>Phone Number:<br />+254725598758</p>
-				<p>Github</p>
-				<p>LinkedIn</p>
-				<p>Twitter</p>
+				<p>Oops! can't click any of the contacts link above! Visit my <a href = "contact.html">contact</a> page 
+				to contact me.</p>
 			</address>
-		</div>
-
+	</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
