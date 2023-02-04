@@ -112,8 +112,8 @@ button{
 }
 	
 .column button {
-	margin-left: 50px;
-	width: 400px;
+	margin-left: 5%;
+	width: 70%;
 	background-color: #0000ff;
 	color: cyan;
 	border: none;
