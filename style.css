@@ -57,6 +57,10 @@ img {
 	img {
 		width: 100%;
 	}
+	button {
+		width: 100%;
+		margin: 0;
+	}
 	.largescreen {
 		display: none;
 	}
