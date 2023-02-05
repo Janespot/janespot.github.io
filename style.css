@@ -40,12 +40,31 @@ img {
 }
 
 #myTopnav {
+	position: sticky;
+	width: 100%;
 	overflow: hidden;
 	background-color: white;
-	padding: 20px;
+	padding: 0;
 	margin-top: 0;
 }
 
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-item {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 100%;
+	overflow: auto;
+	padding: 20px;
+	z-index: 1;
+}
+.dropdown:hover .dropdown-item {
+	display: block;
+}
 
 /***************--------------small screen-------------***************/
 
@@ -69,6 +88,11 @@ img {
 		border-radius: 12px 25px;
 		padding: 15px;
 	}
+	.column2 {
+	flex: 100%;
+	background-color: #f1f1f1;
+	padding: 20px;
+}
 	.largescreen {
 		display: none;
 	}
@@ -111,6 +135,27 @@ img {
   }
 }
 
+.page {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/**
+ **********************------------------main--------------*************************
+ */
+.main {
+	flex: 70%;
+}
+
+/**
+ ****************-----------------side----------------***************************
+ */
+		
+.side {
+	flex: 30%;
+}
+
+
 /*******************---------------contacts page-------**************/
 
 button{
@@ -138,4 +183,8 @@ button{
 	.smallscreen {
 		display: none;
 	}
+	
+  div .mycolumn {
+	width: 40%;
+}
 }

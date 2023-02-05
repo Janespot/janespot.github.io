@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.janespot024.tfr" lang="en-US">
 <head>
-<title>JaneSpot</title>
+<title>Janespot Homepage</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   <link rel="stylesheet" href="w3css.css"/>
@@ -23,12 +23,12 @@
 <meta http-equiv="refresh" content="360"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <base href="" target="_self"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 <style>
 @media only screen and (min-width: 600px){
 body {
-	background: url("./images/body2.png");
+	background: url("./images/body3.png");
 	max-width:100%;
 	min-width: 50%;
 	width: auto;
@@ -40,27 +40,44 @@ body {
 
 </head>
 <body>
+	<div class = "largescreen" style="text-align:center; background-color:black;color: white;padding:2px;">
+		<h1>Janespot</h1>
+	</div>
 	<div class = "smallscreen">
 	<img src = "./images/body2.png" alt = "Me" class = "aboutimg">
 	</div>
 	<div class="topnav" id="myTopnav">
-		<!-- MENU-->
-		<a href="myprojects.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">
-		My Projects</a>
+		<!-- MENU>
+		<div class="dropdown"-->
+			<a href="myprojects.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">
+			My Projects</a>
+			<!--div class="dropdown-item">
+				<a href = "knowledge.html" style="text-decoration:none;padding:15px;">Knowledge is Power</a>
+			</div>
+		</div-->
 		<a href="contact.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">Contacts</a>
 		<a href="about.html" class="w3-bar-item" style="text-decoration:none;padding:15px;">About Me</a>
 		<a href="index.html" class="w3-bar-item active" style="text-decoration:none;padding:15px;">Home</a>
 		<a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
-	<div class = "smallscreen">
-	<div style="padding-left:10px;padding-right:10px;">
+	<div class = "largescreen page" style = "background-color:rgba(255,255,255,0.4);margin:0;padding:20px;">
+		<div class = "side">
+			<img src = "./images/me.jpg" alt = "Me" class = "largescreen w3-circle w3-card-4" style="width:100%">
+		</div>
+	<div class = " main largescreen" style="text-align:center;padding:0;margin-top:0;">
+		<h1 style="color: black;font-size:80px"><b>Janespot</b></h1>
+		<p style="color:black;font-size:20px">
+		Hello, I'm a web developer. Welcome to my portfolio website.</p>
+	</div>
+	</div>
+	<div class = "smallscreen" style="padding-left:10px;padding-right:10px;">
 	<h2 style="text-align:center;">Janespot</h2>	
 	<p style="text-align:center;"><b>Web developer</b></p>
 	<p>Hello, my name is Janespot and I am a web developer. Welcome to my portfolio :-)</p>
 	<p>View my projects by clicking the above menu &#9776; icon on the top-right of this page 
 	then go to "My projects".</p>
 	<p>Thank you for viewing my portfolio.</p>
-	</div>
+ 	</div> 
 	<div class = "footer" style = "	background-color: black;color: white;left: 0;bottom: 0;width: 100%;margin: 0;padding:20px;" >
 			<h3>Contact</h3>
 			<address>
@@ -69,9 +86,7 @@ body {
 				<p>Oops! can't click any of the contacts link above! Visit my <a href = "contact.html">contact</a> page 
 				to contact me.</p>
 			</address>
-	</div>	
-</div>
-  
+	</div>
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
