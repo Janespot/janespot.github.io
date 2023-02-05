@@ -186,5 +186,15 @@ button{
 	
   div .mycolumn {
 	width: 40%;
-}
+	}
+	.page {
+	display: flex;
+	flex-wrap: wrap;
+	}
+	.main {
+	flex: 70%;
+	}
+	.side {
+	flex: 30%;
+	}
 }
