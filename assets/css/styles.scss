@@ -1,0 +1,105 @@
+@import "reset";
+@import "variables";
+
+@mixin font($family, $weight, $size: 1rem) {
+    font: {
+        family: $family;
+        weight: $weight;
+        size: $size;
+    }
+}
+
+@mixin display($display: flex, $justify: center, $align: center, $gap: 1rem, $direction: row) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    flex-direction: $direction;
+}
+
+@mixin default-padding($x: 10rem, $y: 2rem) {
+    padding: $y $x;
+}
+
+@mixin default-margin($x: 5rem, $y: 0) {
+    margin: $y $x;
+}
+
+@mixin bg {
+    background: {
+        color: $grey-800;
+    }
+}
+
+body {
+    background-color: $grey-900;
+    color: $white;
+    margin: 0;
+    @include font($bodyFont, 500);
+}
+
+nav {
+    background-color: $white;
+    color: $grey-900;
+    width: 100%;
+    height: 3rem;
+    position: sticky;
+    top: 0;
+    @include default-padding($x: 5rem, $y: 0);
+    @include display($justify: flex-end);
+    a {
+        text: {
+            decoration: none;
+        }
+        font: {
+            weight: 700;
+        }
+    }
+    // a:hover,
+    // a:active {}
+}
+
+article {
+    min-height: calc(100vh - 3rem);
+}
+
+#home {
+    @include default-margin($y: 0);
+    @include display($direction: row-reverse);
+    img {
+        border-radius: 999px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+#about {
+    @include display;
+}
+.about {
+    @include default-margin($y: 4rem);
+    @include default-padding($x: 3rem, $y: 5rem);
+    @include bg;    
+    @include display;
+    border-radius: 15px;
+}
+
+.section-one {
+    width: 35%;
+}
+.section-two {
+    width: 65%;
+}
+
+#portfolio {
+    @include default-padding;
+    @include bg();
+}
+
+h1 {
+    @include font($headFont, 700, 2rem);
+}
+
+h2 {
+    @include font($headFont, 700, 1.5rem);
+}
