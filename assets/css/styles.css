@@ -178,6 +178,7 @@ h2 {
   flex-direction: row;
   margin-top: -2rem;
   background-color: #fff;
+  border-radius: 5px;
   padding: 0.3rem 2rem;
   width: -moz-fit-content;
   width: fit-content;
@@ -193,4 +194,43 @@ footer {
   text-align: center;
   background-color: black;
   padding: 0.5rem 10rem;
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 0 1rem;
+  }
+  #home {
+    margin: 2.5rem 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  #home .avatar {
+    width: 90%;
+  }
+  .section-one,
+  .section-two {
+    width: 100%;
+  }
+  .about {
+    margin: 0 1.5rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  .about .avatar {
+    display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

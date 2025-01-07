@@ -110,6 +110,7 @@ h2 {
     @include display;
     margin-top: -2rem;
     background-color: $white;
+    border-radius: 5px;
     padding: .3rem 2rem;
     width: fit-content;
     z-index: 2;
@@ -127,4 +128,40 @@ footer {
         color: black;
     }
     @include default-padding($y: .5rem);
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        @include default-padding($x: 1rem, $y: 0);
+    }
+
+    #home {
+        @include default-margin($x: 3.5rem, $y: 2.5rem);
+        @include display($direction: column);
+        .avatar {
+            width: 90%;
+        }
+    }
+
+    .section-one, 
+    .section-two {
+        width: 100%;
+    }
+
+    .about {
+        @include default-margin($x: 1.5rem);
+        @include default-padding($x: 2rem, $y: 1rem);
+        @include display($direction: column-reverse, $gap: 3rem);
+        .avatar {
+            display: none;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
