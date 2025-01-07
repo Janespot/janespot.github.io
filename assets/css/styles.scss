@@ -66,11 +66,12 @@ article {
 #home {
     @include default-margin($y: 0);
     @include display($direction: row-reverse);
-    img {
-        border-radius: 999px;
-        width: 100%;
-        height: auto;
-    }
+}
+
+.avatar {
+    border-radius: 999px;
+    width: 100%;
+    height: auto;
 }
 
 #about {
@@ -78,7 +79,7 @@ article {
 }
 .about {
     @include default-margin($y: 4rem);
-    @include default-padding($x: 3rem, $y: 5rem);
+    @include default-padding($x: 3rem, $y: 2rem);
     @include bg;    
     @include display;
     border-radius: 15px;
@@ -86,6 +87,7 @@ article {
 
 .section-one {
     width: 35%;
+    @include display($direction: column);
 }
 .section-two {
     width: 65%;
@@ -97,9 +99,32 @@ article {
 }
 
 h1 {
-    @include font($headFont, 700, 2rem);
+    @include font($headFont, 700, 3rem);
 }
 
 h2 {
-    @include font($headFont, 700, 1.5rem);
+    @include font($headFont, 700, 2rem);
+}
+
+#social-links {
+    @include display;
+    margin-top: -2rem;
+    background-color: $white;
+    padding: .3rem 2rem;
+    width: fit-content;
+    z-index: 2;
+    img {
+        width: 2rem;
+        height: auto;
+        border-radius: 0;
+    }
+}
+footer {
+    text: {
+        align: center;
+    }
+    background: {
+        color: black;
+    }
+    @include default-padding($y: .5rem);
 }

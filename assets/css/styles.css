@@ -113,7 +113,8 @@ article {
   gap: 1rem;
   flex-direction: row-reverse;
 }
-#home img {
+
+.avatar {
   border-radius: 999px;
   width: 100%;
   height: auto;
@@ -129,7 +130,7 @@ article {
 
 .about {
   margin: 4rem 5rem;
-  padding: 5rem 3rem;
+  padding: 2rem 3rem;
   background-color: hsl(0, 0%, 12%);
   display: flex;
   justify-content: center;
@@ -141,6 +142,11 @@ article {
 
 .section-one {
   width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .section-two {
@@ -155,11 +161,36 @@ article {
 h1 {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2 {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+  margin-top: -2rem;
+  background-color: #fff;
+  padding: 0.3rem 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 2;
+}
+#social-links img {
+  width: 2rem;
+  height: auto;
+  border-radius: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 0.5rem 10rem;
 }/*# sourceMappingURL=styles.css.map */
