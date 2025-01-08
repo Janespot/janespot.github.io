@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open Sans" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -16,7 +17,7 @@
         <a href="#portfolio">Portfolio</a>
         <!-- <a href="#">Blog</a> -->
         <!-- <a href="#">Services</a> -->
-        <!-- <a href="#">Contact</a> -->
+        <a href="#contact">Contact</a>
     </nav>
 
     <article id="home">
@@ -28,13 +29,13 @@
             <p>  
                 I'm a Full-stack Web Developer based in Mombasa, Kenya. I strive to build immersive and beautiful web applications through carefully crafted code and user-centric design.
             </p>
-            <a href="mailto::janejunell777@gmail.com">
+            <a href="mailto:janejunell777@gmail.com">
                 <button type="button">Say Hello!</button>
             </a>
 
             <section class="info-me">
-                <span>2 Y.</span>
-                <span>Experience</span>
+                <span class="top-info">2 Y.</span>
+                <span class="bottom-info">Experience</span>
             </section>
 
             <!-- <section>
@@ -48,6 +49,8 @@
             </section> -->
         </section>
     </article>
+
+    <hr />
     
     <article id="about">
         <section class="about">
@@ -85,34 +88,120 @@
                         <button type="button">My Projects</button>
                     </a>
                     <a href="./assets/doc/Jane Odhiambo CV.pdf" download="Jane Odhiambo CV">
-                        <button type="button">Download CV</button>
+                        <button id="cv" type="button">
+                            <i class="material-icons">file_download</i>
+                            Download CV
+                        </button>
                     </a>
                 </section>
             </section>
         </section>
     </article>
+
+    <hr />
     
     <article id="portfolio">
         <h2>Portfolio</h2>
         <p>
         </p>
         <section id="portfolio-images">
-            <a href="blog-preview-card-main/" target="_blank">
+            <a href="https://janespot.github.io/blog-preview-card-main/" target="_blank">
                 <img src="./assets/image/blog-card.jpeg" alt="" />
             </a>
             
-            <a href="/product-preview-card-component-main/" target="_blank">
+            <a href="https://janespot.github.io/product-preview-card-component-main/" target="_blank">
                 <img src="./assets/image/product.png" alt="" />
             </a>
-            <a href="/qr-code-component-main/" target="_blank">
+            <a href="https://janespot.github.io/qr-code-component-main/" target="_blank">
                 <img src="./assets/image/qr.png" alt="" />
             </a>
-            <a href="/recipe-page-main/" target="_blank">
+            <a href="https://janespot.github.io/recipe-page-main/" target="_blank">
                 <img src="./assets/image/recipe.png" alt="" />
             </a>
-            <a href="/social-links-profile-main/" target="_blank">
+            <a href="https://janespot.github.io/social-links-profile-main/" target="_blank">
                 <img src="./assets/image/socials.png" alt="" />
             </a>
+        </section>
+    </article>
+
+    <article id="collaborate">
+        <h2>Do you have any project ideas? <br/>Let's discuss your project!</h2>
+        
+        <a href="mailto:janejunell777@gmail.com">
+            <button type="button">Let's Collaborate &rarr;</button>
+        </a>
+    </article>
+
+    <article id="contact">
+        <section>
+            <div>
+                <h2>Contact Me</h2>
+                <div id="contact-card">
+                    <div class="contact-div">
+                        <img src="./assets/image/location.png" alt="location icon" />
+                        <div>
+                            <div class="top-contact">Address</div>
+                            <div class="bottom-contact">Mombasa, Kenya</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-div">
+                        <img src="./assets/image/email.png" alt="email icon" />
+                        <div>
+                            <div class="top-contact">Email</div>
+                            <div class="bottom-contact">janejunell777@gmail.com</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-div">
+                        <img src="./assets/image/telephone.png" alt="telephone icon" />
+                        <div>
+                            <div class="top-contact">Call</div>
+                            <div class="bottom-contact">+254725598758</div>
+                        </div>
+                    </div>
+
+                    <section id="social-links-final">
+                        <a href="https://www.linkedin.com/in/jane-odhiambo-45b1601b9/" target="_blank">
+                            <img src="./assets/image/linkedin.png" alt="linkedin logo" />
+                        </a>
+                        <a href="https://github.com/Janespot" target="_blank">                    
+                            <img src="./assets/image/github.png" alt="github logo" />
+                        </a>
+                        <a href="https://x.com/Janejunell777" target="_blank">                    
+                            <img src="./assets/image/twitter.png" alt="twitter logo" />
+                        </a>
+                    </section>
+                </div>
+            </div>
+            <div>
+                <h2>Leave a Message</h2>
+                <form method="post" enctype="text/plain" action="mailto:janejunell777@gmail.com">
+                    <div>
+                        <label for="name">Name *</label>
+                        <input type="text" name="name" placeholder="Enter Your Name" required />
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email *</label>
+                        <input type="text" name="email" placeholder="Enter Your Email" required />
+                    </div>
+                    
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" placeholder="Enter Subject" />
+                    </div>
+                    
+                    <div>
+                        <label for="body">Message *</label>
+                        <textarea name="body" rows="8" placeholder="Write Your Message Here..." required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </article>
     
