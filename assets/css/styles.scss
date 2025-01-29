@@ -38,11 +38,17 @@
     width: 100%;
 }
 
+@keyframes dwnldbtn {
+    0% {border: 2px solid $button-color;}
+    100% {border: 2px solid $button-color;}
+}
+
 body {
     background-color: $grey-900;
     color: $white;
     margin: 0;
-    @include font($bodyFont, 500, $size: .9rem);
+    @include font($bodyFont, 500, $size: 1rem);
+    line-height: 1.7rem;
 }
 
 nav {
@@ -69,7 +75,9 @@ nav {
 }
 
 article {
-    min-height: calc(100vh - 3rem);
+    // min-height: calc(100vh - 3rem);
+    min-height: fit-content;
+    padding: 20px 0;
 }
 
 #home {
@@ -160,8 +168,11 @@ a {
 #cv {
     @include display($gap: .5rem);
     color: $button-color;
-    border: 2px solid $button-color;
     background-color: $grey-900;
+    animation-name: dwnldbtn;
+    animation-iteration-count: infinite;
+    animation-duration: .00002s;
+    animation-timing-function: linear;
 }
 
 .pbutton:hover,
@@ -206,7 +217,7 @@ a {
     div {
         width: 100%;
         max-width: 350px;
-        height: fit-content;
+        height: 450px;
         border-radius: 12px;
         display: flex;
         flex-direction: column;
@@ -223,6 +234,8 @@ a {
         div {
             padding: 1rem .5rem;
             text-align: left;
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
@@ -264,6 +277,7 @@ a {
 
 #contact {
     @include display;
+    min-height: 250px;
     section {
         @include display($align: flex-start, $gap: 2rem);
         border-radius: 12px;

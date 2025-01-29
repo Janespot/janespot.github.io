@@ -73,13 +73,22 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+@keyframes dwnldbtn {
+  0% {
+    border: 2px solid #01e9f7;
+  }
+  100% {
+    border: 2px solid #01e9f7;
+  }
+}
 body {
   background-color: hsl(0, 0%, 8%);
   color: #fff;
   margin: 0;
   font-family: "Open Sans";
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }
 
 nav {
@@ -106,7 +115,9 @@ nav a:active {
 }
 
 article {
-  min-height: calc(100vh - 3rem);
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding: 20px 0;
 }
 
 #home {
@@ -228,8 +239,11 @@ a {
   gap: 0.5rem;
   flex-direction: row;
   color: #01e9f7;
-  border: 2px solid #01e9f7;
   background-color: hsl(0, 0%, 8%);
+  animation-name: dwnldbtn;
+  animation-iteration-count: infinite;
+  animation-duration: 0.00002s;
+  animation-timing-function: linear;
 }
 
 .pbutton:hover,
@@ -278,8 +292,7 @@ a {
 #portfolio-images div {
   width: 100%;
   max-width: 350px;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 450px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -296,6 +309,8 @@ a {
 #portfolio-images div div {
   padding: 1rem 0.5rem;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 #collaborate {
@@ -349,6 +364,7 @@ a {
   align-items: center;
   gap: 1rem;
   flex-direction: row;
+  min-height: 250px;
 }
 #contact section {
   display: flex;
