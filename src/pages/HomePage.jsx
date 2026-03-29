@@ -25,7 +25,7 @@ const skills = [
   {
     category: 'Cloud & Databases',
     icon: 'cloud',
-    items: ['AWS (Amplify, DynamoDB, S3, Lambda, Bedrock, EC2)', 'Docker', 'PostgreSQL', 'MySQL', 'MongoDB', 'ChromaDB'],
+    items: ['AWS Amplify', 'DynamoDB', 'S3', 'Lambda', 'Bedrock', 'EC2', 'Docker', 'PostgreSQL', 'MySQL', 'MongoDB', 'ChromaDB'],
   },
   {
     category: 'Testing & Tools',
