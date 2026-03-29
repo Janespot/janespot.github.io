@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { getPdfUrl } from '../utils/pdfUrl';
 
 export default function PdfModal({ title, file, onClose }) {
   useEffect(() => {
@@ -29,7 +30,7 @@ export default function PdfModal({ title, file, onClose }) {
           </div>
         </div>
         <div className="modal-body">
-          <iframe src={`${file}#zoom=page-width`} title={title} className="modal-pdf" />
+          <iframe src={getPdfUrl(file)} title={title} className="modal-pdf" />
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { getPdfUrl } from '../utils/pdfUrl';
 
 export default function CertModal({ cert, onClose }) {
   useEffect(() => {
@@ -14,7 +15,7 @@ export default function CertModal({ cert, onClose }) {
   if (!cert) return null;
 
   const isImage = /\.(jpg|jpeg|png|gif|webp)$/i.test(cert.file);
-  const viewUrl = isImage ? cert.file : `${cert.file}#zoom=page-width`;
+  const viewUrl = isImage ? cert.file : getPdfUrl(cert.file);
 
   return (
     <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label={cert.name}>
