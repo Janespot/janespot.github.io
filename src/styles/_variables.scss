@@ -1,0 +1,32 @@
+// Theme colors — ocean blue, white, light pink
+$white: #ffffff;
+$ocean-900: #0a1628;
+$ocean-800: #0f2240;
+$ocean-700: #153260;
+$ocean-600: #1a4080;
+$ocean-500: #2563eb;
+$ocean-400: #3b82f6;
+$ocean-300: #60a5fa;
+$ocean-200: #93c5fd;
+$ocean-100: #dbeafe;
+
+$pink-light: rgba(255, 182, 193, 0.15);
+$pink-accent: rgba(255, 182, 193, 0.3);
+$pink-solid: #ffb6c1;
+
+$grey-600: hsl(0, 0%, 40%);
+
+// Typography
+$headFont: "Montserrat";
+$bodyFont: "Open Sans";
+
+// Semantic aliases
+$bg-primary: $ocean-900;
+$bg-card: $ocean-800;
+$text-primary: $white;
+$text-muted: $ocean-200;
+$button-color: $ocean-400;
+$button-hover: $ocean-300;
+$link-hover: $ocean-300;
+$info-bg: $pink-light;
+$accent: $pink-solid;
