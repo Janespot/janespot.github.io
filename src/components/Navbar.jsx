@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('theme') || 'dark';
@@ -19,11 +23,15 @@ export default function Navbar() {
   const handleHashLink = (hash) => (e) => {
     e.preventDefault();
     setMenuOpen(false);
+    if (!isHome) {
+      window.location.href = `/${hash}`;
+      return;
+    }
     const el = document.querySelector(hash);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const links = [
+  const hashLinks = [
     { label: 'Home', hash: '#home' },
     { label: 'About', hash: '#about' },
     { label: 'Skills', hash: '#skills' },
@@ -34,9 +42,9 @@ export default function Navbar() {
 
   return (
     <nav>
-      <a href="#home" className="nav-brand" onClick={handleHashLink('#home')}>
+      <Link to="/" className="nav-brand" onClick={() => setMenuOpen(false)}>
         Janespot
-      </a>
+      </Link>
       <div className="nav-right">
         <button
           className="theme-toggle"
@@ -57,11 +65,12 @@ export default function Navbar() {
         </button>
       </div>
       <div className={`nav-links${menuOpen ? ' open' : ''}`}>
-        {links.map(({ label, hash }) => (
+        {hashLinks.map(({ label, hash }) => (
           <a key={label} href={hash} onClick={handleHashLink(hash)}>
             {label}
           </a>
         ))}
+        <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
       </div>
     </nav>
   );
