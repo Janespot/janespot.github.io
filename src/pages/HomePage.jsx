@@ -163,7 +163,7 @@ export default function HomePage() {
       {/* Hero */}
       <section id="home" className="hero">
         <div className="hero-image">
-          <img src={avatarImg} alt="Jane Odhiambo" className="avatar" />
+          <img src={avatar2Img} alt="Jane Odhiambo" className="avatar" />
         </div>
         <div className="hero-content">
           <span className="hero-tag">AI Engineer & Full-stack Developer</span>
@@ -204,7 +204,7 @@ export default function HomePage() {
       <section id="about" className="about-section">
         <div className="about-card">
           <div className="about-image">
-            <img src={avatar2Img} alt="Jane Odhiambo" className="about-avatar" />
+            <img src={avatarImg} alt="Jane Odhiambo" className="about-avatar" />
             <SocialLinks id="about-socials" />
           </div>
           <div className="about-content">

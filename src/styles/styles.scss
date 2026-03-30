@@ -234,10 +234,11 @@ nav {
     animation: float 6s ease-in-out infinite;
 
     .avatar {
-        border-radius: 999px;
-        width: 100%;
-        max-width: 320px;
-        height: auto;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center top;
         border: 3px solid $ocean-700;
         box-shadow: 0 0 60px rgba(37, 99, 235, 0.12), 0 0 120px $pink-light;
         transition: box-shadow 0.4s;
@@ -382,8 +383,8 @@ nav {
 
 .social-links {
     @include flex($gap: 0.75rem);
-    background: $pink-light;
-    border: 1px solid rgba(255, 182, 193, 0.15);
+    background: rgba(255, 182, 193, 0.2);
+    border: 1px solid rgba(255, 182, 193, 0.25);
     border-radius: 12px;
     padding: 0.5rem 1.25rem;
     width: fit-content;
@@ -394,10 +395,11 @@ nav {
         width: 2.2rem;
         height: 2.2rem;
         border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
         transition: background 0.2s, transform 0.2s;
 
         &:hover {
-            background: rgba($white, 0.08);
+            background: rgba($white, 0.15);
             transform: scale(1.1);
         }
     }
@@ -405,13 +407,13 @@ nav {
     img {
         width: 1.5rem;
         height: auto;
-        opacity: 0.75;
+        opacity: 0.8;
         transition: opacity 0.2s;
     }
 
     a:hover img { opacity: 1; }
 
-    &:hover { background: $pink-accent; }
+    &:hover { background: rgba(255, 182, 193, 0.3); }
 }
 
 #about-socials {
@@ -1198,8 +1200,8 @@ footer {
 }
 
 #footer-socials {
-    background: rgba($white, 0.04);
-    border-color: rgba($white, 0.06);
+    background: rgba(255, 182, 193, 0.15);
+    border-color: rgba(255, 182, 193, 0.2);
 }
 
 .footer-bottom {
@@ -1255,7 +1257,7 @@ footer {
 
     .hero-image {
         width: 100%;
-        .avatar { max-width: 200px; }
+        .avatar { width: 200px; height: 200px; }
     }
 
     .hero-content {
