@@ -34,11 +34,11 @@ The biggest takeaway: start simple, ship fast, iterate based on real feedback.
   {
     slug: 'my-experience-as-an-ai-engineer',
     title: 'My Experience as an AI Engineer at Algonquin College',
-    date: '2026-03-15',
+    date: '2026-03-30',
     tags: ['AI', 'AWS', 'Python'],
-    excerpt: 'Lessons learned from building production AI tools with AWS services during my co-op at the AI Accelerator Hub.',
+    excerpt: 'Lessons learned from building production AI tools with AWS services during my job at the AI Accelerator Hub.',
     content: `
-During my co-op at the AI Accelerator Hub at Algonquin College, I got hands-on experience building real AI infrastructure. Here are the key things I worked on and what I learned.
+During my job at the AI Accelerator Hub at Algonquin College, I got hands-on experience building real AI infrastructure. Here are the key things I worked on and what I learned.
 
 ## Building a PDF Report Generator
 

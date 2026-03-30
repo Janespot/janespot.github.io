@@ -173,7 +173,7 @@ export default function HomePage() {
             building intelligent applications and scalable web solutions. Based in Ottawa, Canada.
           </p>
           <div className="hero-actions">
-            <a href="mailto:janejunell56@gmail.com">
+            <a href="#contact">
               <button type="button" className="btn-primary">Say Hello!</button>
             </a>
             <a href="#portfolio">

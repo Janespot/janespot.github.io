@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const isHome = location.pathname === '/';
 
   const [theme, setTheme] = useState(() => {
@@ -23,13 +24,27 @@ export default function Navbar() {
   const handleHashLink = (hash) => (e) => {
     e.preventDefault();
     setMenuOpen(false);
-    if (!isHome) {
-      window.location.href = `/${hash}`;
-      return;
+    if (isHome) {
+      const el = document.querySelector(hash);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/', { state: { scrollTo: hash } });
     }
-    const el = document.querySelector(hash);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
+
+  // After navigating to home from another page, scroll to the target
+  useEffect(() => {
+    if (isHome && location.state?.scrollTo) {
+      const hash = location.state.scrollTo;
+      // Small delay to let the page render
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+      // Clear the state so it doesn't re-scroll on re-renders
+      window.history.replaceState({}, '');
+    }
+  }, [isHome, location.state]);
 
   const hashLinks = [
     { label: 'Home', hash: '#home' },
