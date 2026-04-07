@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import SocialLinks from './SocialLinks';
 
 export default function Footer() {
@@ -27,6 +27,7 @@ export default function Footer() {
           <a href="#home" onClick={handleHashLink('#home')}>Home</a>
           <a href="#about" onClick={handleHashLink('#about')}>About</a>
           <a href="#portfolio" onClick={handleHashLink('#portfolio')}>Portfolio</a>
+          <Link to="/blog">Blog</Link>
           <a href="#contact" onClick={handleHashLink('#contact')}>Contact</a>
         </div>
         <SocialLinks id="footer-socials" />

@@ -1408,6 +1408,105 @@ footer {
 
 // Blog
 
+// Accent color for blog (teal-green to break blue monotony)
+$blog-accent: #0d9488;
+$blog-accent-light: rgba(13, 148, 136, 0.12);
+$blog-accent-border: rgba(13, 148, 136, 0.25);
+
+.blog-tag {
+    color: $blog-accent !important;
+    background: $blog-accent-light !important;
+    border-color: $blog-accent-border !important;
+}
+
+// ── Blog Preview (Homepage) ──────────────────────────────
+
+.blog-preview-section {
+    padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 5rem);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.blog-preview-grid {
+    @include flex($gap: 1.5rem, $align: stretch);
+    flex-wrap: wrap;
+}
+
+.blog-preview-card {
+    flex: 1 1 280px;
+    @include glass;
+    @include card-shadow;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 3px solid $blog-accent;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(13, 148, 136, 0.12), 0 0 0 1px rgba($white, 0.08);
+    }
+
+    h3 {
+        @include font($headFont, 700, 1rem);
+        color: $white;
+        margin: 0.5rem 0 0.4rem;
+        line-height: 1.4;
+    }
+
+    p {
+        color: $text-muted;
+        font-size: 0.88rem;
+        line-height: 1.65;
+        margin: 0;
+    }
+}
+
+.blog-card-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s;
+    }
+
+    .blog-preview-card:hover &,
+    .blog-card:hover & {
+        img { transform: scale(1.04); }
+    }
+}
+
+.blog-card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.blog-preview-footer {
+    text-align: center;
+    margin-top: 2rem;
+
+    .btn-outline {
+        border-color: $blog-accent;
+        color: $blog-accent;
+
+        &:hover {
+            background: $blog-accent;
+            color: $white;
+            border-color: $blog-accent;
+        }
+    }
+}
+
+// ── Blog Listing Page ────────────────────────────────────
+
 .blog-section {
     padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 5rem);
     max-width: 800px;
@@ -1423,20 +1522,25 @@ footer {
     @include glass;
     @include card-shadow;
     border-radius: 16px;
-    padding: 1.75rem;
+    overflow: hidden;
     display: block;
-    transition: transform 0.3s, box-shadow 0.3s;
     color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 3px solid $blog-accent;
 
     &:hover {
         transform: translateY(-4px);
-        box-shadow: 0 12px 40px rgba(37, 99, 235, 0.15);
+        box-shadow: 0 12px 40px rgba(13, 148, 136, 0.12);
+    }
+
+    .blog-card-body {
+        padding: 1.5rem;
     }
 
     h3 {
-        @include font($headFont, 700, 1.2rem);
+        @include font($headFont, 700, 1.15rem);
         color: $white;
-        margin: 0.75rem 0 0.5rem;
+        margin: 0.5rem 0 0.4rem;
         line-height: 1.4;
     }
 
@@ -1450,6 +1554,8 @@ footer {
 
 .blog-card-meta {
     @include flex($justify: space-between, $align: center);
+    flex-wrap: wrap;
+    gap: 0.5rem;
 
     time {
         @include font($bodyFont, 500, 0.8rem);
@@ -1464,6 +1570,9 @@ footer {
     .skill-tag {
         font-size: 0.7rem;
         padding: 0.15rem 0.5rem;
+        background: $blog-accent-light;
+        border-color: $blog-accent-border;
+        color: $blog-accent;
     }
 }
 
@@ -1471,10 +1580,8 @@ footer {
     display: inline-block;
     margin-top: 1rem;
     @include font($bodyFont, 700, 0.85rem);
-    color: $ocean-300;
+    color: $blog-accent;
     transition: color 0.2s;
-
-    .blog-card:hover & { color: $white; }
 }
 
 .blog-not-found {
@@ -1525,6 +1632,56 @@ footer {
     time {
         @include font($bodyFont, 500, 0.85rem);
         color: $grey-600;
+    }
+}
+
+.blog-preview-block {
+    @include glass;
+    @include card-shadow;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    border-top: 3px solid $blog-accent;
+}
+
+.blog-preview-block-header {
+    @include flex($justify: space-between, $align: center);
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba($white, 0.06);
+
+    div {
+        @include flex($gap: 0.5rem, $justify: flex-start);
+        color: $blog-accent;
+        font-weight: 600;
+        font-size: 0.9rem;
+
+        .material-icons { font-size: 1.1rem; }
+    }
+}
+
+.blog-demo-iframe-wrap {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog-demo-iframe {
+    width: 150%;
+    height: 150%;
+    border: none;
+    display: block;
+    transform: scale(0.667);
+    transform-origin: top left;
+    pointer-events: none;
+}
+
+.blog-preview-block--image {
+    img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        display: block;
     }
 }
 
@@ -1767,16 +1924,18 @@ footer {
     .btn-outline { color: $ocean-500; border-color: $ocean-400; }
     .btn-outline:hover { color: $white; }
 
-    .blog-card {
+    .blog-card, .blog-preview-card {
         background: rgba(255, 255, 255, 0.8);
         border-color: rgba(0, 0, 0, 0.06);
         box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
         h3 { color: $ocean-900; }
         p { color: $ocean-700; }
-        &:hover { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08); }
     }
-    .blog-read-more { color: $ocean-500; }
-    .blog-card:hover .blog-read-more { color: $ocean-900; }
+    .blog-demo-preview, .blog-preview-block {
+        background: rgba(255, 255, 255, 0.8);
+        border-color: rgba(0, 0, 0, 0.06);
+    }
+    .blog-preview-block-header { border-bottom-color: rgba(0, 0, 0, 0.06); }
 
     .blog-post-header {
         border-bottom-color: rgba(0, 0, 0, 0.06);

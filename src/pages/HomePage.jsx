@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
 import CertModal from '../components/CertModal';
 import PdfModal from '../components/PdfModal';
+import posts from '../data/posts';
 
 import avatarImg from '/image/avatar.jpg';
 import avatar2Img from '/image/avatar2.jpg';
@@ -377,6 +379,42 @@ export default function HomePage() {
             <li>Promoting inclusivity by supporting women in technology through active community engagement.</li>
             <li>Strengthening leadership and communication skills while contributing to the growth of emerging developers.</li>
           </ul>
+        </div>
+      </section>
+
+      {/* Blog Preview */}
+      <section id="blog" className="blog-preview-section">
+        <div className="section-header">
+          <span className="section-tag blog-tag">Writing</span>
+          <h2>Latest Posts</h2>
+          <p>Thoughts on AI, web development, and building things.</p>
+        </div>
+        <div className="blog-preview-grid">
+          {posts.slice(0, 3).map((post) => (
+            <Link to={`/blog/${post.slug}`} className="blog-preview-card" key={post.slug}>
+              {post.image && (
+                <div className="blog-card-image">
+                  <img src={post.image} alt={post.title} />
+                </div>
+              )}
+              <div className="blog-card-body">
+                <div className="blog-card-meta">
+                  <time>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+                  <div className="blog-card-tags">
+                    {post.tags.slice(0, 2).map((tag) => (
+                      <span className="skill-tag" key={tag}>{tag}</span>
+                    ))}
+                  </div>
+                </div>
+                <h3>{post.title}</h3>
+                <p>{post.excerpt}</p>
+                <span className="blog-read-more">Read more &rarr;</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="blog-preview-footer">
+          <Link to="/blog" className="btn-outline">View All Posts &rarr;</Link>
         </div>
       </section>
 
